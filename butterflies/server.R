@@ -16,7 +16,7 @@ absM.all=read.csv(paste(getwd(),"/absM-all.csv",sep = ""))
 shinyServer(function(input, output) {
 
   dataset <- reactive({
-    absM.all[sample(nrow(absM.all), input$sample_size),]
+    absM.all %>% filter(Year == input$year)
   })
   
   print(getwd())
@@ -29,7 +29,7 @@ shinyServer(function(input, output) {
     
   # trend plot with #add trendlines
   ggplot(data=dataset(), aes_string(x=input$x, y = input$y, color=input$color)) +
-      geom_point(alpha=0.8) +theme_classic()+ xlab("year") +
+      geom_point(alpha=0.8) +theme_classic()+ xlab(input$x) +
       theme(legend.position="none")+
       scale_color_gradientn(colours = rev(heat.colors(5)))+ 
       theme(legend.key.width=unit(1,"cm"))+
