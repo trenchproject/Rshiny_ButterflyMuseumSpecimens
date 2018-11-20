@@ -26,17 +26,19 @@ shinyUI(
       column(3,
              h4("Filter"),
              sliderInput('year', 'Year', 
-                         min=min(dataset$Year), max=max(dataset$Year), value=min(min(dataset$Year), max(dataset$Year)),format = "####",sep = "",step = 1),
+                         min=min(dataset$Year),
+                         max=max(dataset$Year), 
+                         value=c(min(dataset$Year), 
+                                   max(dataset$Year)),
+                         format = "####",sep = "",step = 1),
              br()
       ),
       column(4, offset = 1,
-             selectInput('x', 'X', c('Year'='Year','doy'='doy','Pupal Temperature'='Tpupal','Forewing Length'='FWL')),
-             selectInput('y', 'Y', c('FWL','Thorax')),
-             selectInput('color', 'Color', c('doy162to202'))
-      ),
-      column(4,
-             selectInput('facets', 'Facet_Column', c('region.lab'))
+             selectInput('x', 'X', c('Year'='Year','doy'='doy','Developmental Temperature'='doy162to202','Pupal Temperature'='Tpupal','Forewing Length'='FWL')),
+             selectInput('y', 'Y',  c('Year'='Year','doy'='doy','Developmental Temperature'='doy162to202','Pupal Temperature'='Tpupal','Forewing Length'='FWL')),
+             selectInput('color', 'Color', c('Year'='Year','doy'='doy','Developmental Temperature'='doy162to202','Pupal Temperature'='Tpupal','Forewing Length'='FWL'))
       )
+      
     )
   )
 )
