@@ -1,14 +1,18 @@
 #
-#
-#
 # Part of trench project
 # author Aji John https://github.com/ajijohn
 # UI
+#
+# todo
+# axis labels
+# setae length
 # 
 #
 
 library(shiny)
 library(tidyverse)
+library(leaflet)
+library(leaflet.extras)
 
 dataset <-read.csv(paste(getwd(),"/absM-all.csv",sep = ""))
 
@@ -16,8 +20,24 @@ dataset <-read.csv(paste(getwd(),"/absM-all.csv",sep = ""))
 shinyUI(
   fluidPage(
     
-    title = "Temperatures",
-    
+    title = "Temperatures - Butterflies",
+    fluidRow(
+    column(12,
+           includeMarkdown("include.md")
+    )),
+    fluidRow(
+             column(6,
+                    leafletOutput("mymap")
+             )    ,
+             column(6,
+                    imageOutput("distPlot")
+             )  
+             ),
+    hr(),
+    fluidRow(
+      column(12,
+             includeMarkdown("include2.md")
+      )),
     plotOutput('trendPlot'),
     
     hr(),
@@ -39,6 +59,11 @@ shinyUI(
              selectInput('color', 'Color', c('Year'='Year','doy'='doy','Developmental Temperature'='doy162to202','Pupal Temperature'='Tpupal','Forewing Length'='FWL'))
       )
       
-    )
+    ),
+    hr(),
+    fluidRow(
+      column(12,
+             includeMarkdown("include3.md")
+      ))
   )
 )

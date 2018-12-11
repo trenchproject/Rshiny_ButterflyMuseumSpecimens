@@ -6,6 +6,7 @@
 #
 
 library(shiny)
+library(cowplot)
 source(paste(getwd(),'/spatial_functions.R',sep = ""))
 
 # Do house  keeping
@@ -26,7 +27,30 @@ shinyServer(function(input, output) {
   })
   
   print(getwd())
+  pal = colorNumeric("RdYlBu", domain = absM.all$estElevation)
+  output$mymap <- renderLeaflet({
+    leaflet(dataset()) %>%
+      fitBounds(~min(lon), ~min(lat), ~max(lon), ~max(lat)) %>%
+      addProviderTiles(providers$Esri.WorldTopoMap,
+                       options = providerTileOptions(noWrap = TRUE)
+      ) %>%
+      addCircles(~lon,~lat,color = ~pal(estElevation)) %>%
+      addLegend(pal = pal, values = ~estElevation) 
+  })
   
+  output$distPlot <- renderPlot({
+    
+    p1<- ggplot(data=dataset(), aes(Lat,estElevation,col=region.lab)) + geom_point() +
+      theme_classic() +labs(x="Latitude(°)",y="Elevation (m)")
+    
+    p2<- ggplot(data=dataset(), aes(Year,doy162to202,col=region.lab)) + geom_point() + geom_line() +
+      geom_smooth(se = FALSE, method = lm) +
+      theme_classic() +labs(x="Year",y="Developmental Temperature (°C)")
+    
+    plot_grid(p1,p2, ncol=1,nrow = 2,
+              labels="", label_size=12, align="v")  
+    
+  })
   
   output$trendPlot <- renderPlot({
   
