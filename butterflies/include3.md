@@ -1,20 +1,11 @@
 ---
 title: "include3.md"
-author: "Aji John"
-date: "12/10/2018"
+author: "Meera Lee Sethi"
+date: "4/24/2019"
 output: html_document
 ---
 
+## Synthesis
+[Text excerpts below, not sure how much synthesis is desirable. Could be written to help generate hypotheses for trait shifts without discussing actual shifts?]
+Shifts toward darker wings in the high elevation Southern RM but lighter wings in the lower elevation Northern and Canadian RM may indicate differential drivers among biogeographic regions, perhaps reflecting habitat differences. Darker coloration may enable high-elevation populations to capitalize on warming [24], particularly if warming has extended the flight season into the cooler early and late seasons [21]. Fluctuations in the strength and direction of selection due to environmental variation also influence melanism trends in the alpine sites [28]. Given the cool temperatures in the alpine sites, selection for wing darkening to increase flight time in cold years may be stronger and more regular than selection to avoid overheating in warm years. 
 
-## Preamble 3
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-
-## Use case 3
-
-You can also embed plots, for example:
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

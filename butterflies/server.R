@@ -7,11 +7,11 @@
 
 library(shiny)
 library(cowplot)
-source(paste(getwd(),'/spatial_functions.R',sep = ""))
+#source(paste(getwd(),'/spatial_functions.R',sep = ""))
 
 # Do house  keeping
 absM.all=read.csv(paste(getwd(),"/absM-all.csv",sep = ""))
-
+absM= absM.all
 
 # Define server logic to do filtering
 shinyServer(function(input, output) {
