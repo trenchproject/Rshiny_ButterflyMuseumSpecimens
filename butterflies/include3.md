@@ -4,6 +4,5 @@ author: "Meera Lee Sethi"
 date: "5/6/2019"
 output: html_document
 ---
-### Complex Responses
-
-After experimenting with plotting the data, you’ve probably realized that a lot of the time, simple expectations about how climate might influence these butterflies turned out to be too simple—and the way this species is responding seems to vary across regions in extremely complex ways. This might seem surprising, but recall from the Climate Change and Physiology section how many interacting forces are at play, and how difficult it is to predict how individual populations will behave in the face of change. That’s precisely why collecting data like these that we can use to test both simple and complex hypotheses is essential for improving our ability to forecast responses to climate change.
+    
+Try to answer some of the following questions by changing the data you plot. For each, consider whether you see the same patterns at all three sites, or if different populations respond differently. Recall how each population occupies a different elevational range. How might this affect their responses? Hover over each question for a hint. 

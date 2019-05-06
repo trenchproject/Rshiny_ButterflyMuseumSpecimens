@@ -17,21 +17,7 @@ The image below shows two different *Colias* species, *Colias meadeii* and a rel
 
 ### Exploring butterfly morphological data 
 
-In this exercise, you can generate figures using the following variables:
+In this exercise, you can generate figures using the following variables (hover over a variable for an explanation):
 
-1. Year (This is the year in which each specimen was collected. Include this variable when you want to look at changes over time.)
-2. Day of year (This is the day of the year (Jan 1 is 1, December 31 is 365) when each specimen was collected. Since adult Colias butterflies only live a few days, this gives us a good estimate of their phenology, especially when they reached adulthood.)
-3. Seasonal temperature (This is a measure of overall spring and summer temperatures in each year.)
-4. Pupal temperature (This is an estimate of how warm it was specifically during the period when a particular specimen was pupating.)
-5. Wing melanism (A measure of the darkness of the underwings.)
-6. Forewing length (A measure of overall body size.)
-7. Setae length (A measure of the longest setae between the first and second leg.)
 
-In addition to selecting variables to display on the x- and y-axes, you have the option of coloring each data point according to a third variable. For example, to see whether pupal temperatures have changed over time, plot Year as the x-axis variable and Pupal temperature as the y-axis variable. If you then select Day of Year as the variable for Color, you’ll be able to see when each specimen was collected. This might be interesting if you wanted to see if pupal temperatures are changing because of climate change, OR because butterflies are experiencing a phenological shift.
 
-Try to answer some of the following questions by changing the data you plot. For each, consider whether you see the same patterns at all three sites, or if different populations respond differently. Recall how each population occupies a different elevational range. How might this affect their responses?
-
-* Have spring and summer temperatures increased over the years?
-* Have butterfly wings lightened over the year?
-* Have forewings or setae length decreased over the years?
-* Do spring and summer temperatures affect the day of year when butterflies reach adulthood?
