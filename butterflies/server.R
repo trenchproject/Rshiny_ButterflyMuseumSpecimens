@@ -7,6 +7,7 @@
 
 library(shiny)
 library(cowplot)
+
 #source(paste(getwd(),'/spatial_functions.R',sep = ""))
 
 # Do house  keeping
@@ -70,3 +71,5 @@ shinyServer(function(input, output) {
   })
   
 })
+
+
