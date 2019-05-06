@@ -1,42 +1,33 @@
 ---
 title: "include.md"
 author: "Meera Lee Sethi"
-date: "4/24/2019"
+date: "5/6/2019"
 output: html**document
 ---
-## Historic specimens
-Using museum specimens to examine morphology:
-Most evidence for organismal responses to climate change consists of shifts in phenology, distribution, and abundance [1]. However, some studies have shown that species’ morphologies are also shifting in response to climate change. These studies are often limited to exploring shifts in body size [2,3], and whether body size shifts are driven by plasticity or evolution is often unknown. Museum specimens represent a largely untapped resource for detecting shifts in functional phenotypes beyond size [4,5]. 
 
-## Intro to Colias butterflies
-Climate change influences organisms at two timescales.
-Long-term conditions aggregate to determine energy balance and subsequently reproduction
-Short-term climate extremes can cause thermal stress and mortality
-The balance of these two impacts varies across environmental and elevation gradients but is difficult to quantify.
+## Morphological Responses to Climate Change: A Case Study
 
-Colias butterflies, known as sulphurs or clouded yellows, on mountains allow exploring the issue because traits that determine body temperatures set the balance of these impacts.  Colias body temperatures are influenced by two key thermoregulatory traits: 1) more dark pigments on the underside of their wings allows the butterflies to heat up by absorbing more solar radiation, and 2) longer hairs (fur) of their body insulate from heat loss.
+### Museum specimens hold clues to physical changes
 
-The butterflies are ecotherms and only able to fly over a narrow range of body temperatures, so body temperatures determine the duration of flight. Flight is required for activities including mating, feeding, and oviposition that influence fitness. However, butterflies may overheat, which not only limits flight time, but can also directly reduce the number of viable eggs produced by each female. 
+In different environments, different physical forms are more or less suitable. For instance, trees growing in extremely windy places tend to have stout trunks and be short in stature, both traits that make them less susceptible to wind damage. It makes sense, then, that climate change is leading to changes in organisms’ physical structure, or morphology. One thing researchers have documented in many species is a [shrinking of overall body size](https://www.scientificamerican.com/article/how-global-warming-is-shrinking-earths-animals/). There are a few reasons for this, but one is that it’s easier to cool yourself down if you’re smaller, since you have a larger surface area compared to your volume. Think of how much faster a hot cup of coffee cools down if you pour it into a wide pan! Another reason that’s specific to insects and other ectotherms is that when it’s warm, insects grow to adulthood more quickly—and therefore reach adulthood at a smaller size.
 
-Butterflies at higher elevations have darker wings which allows them to warm up in cool temperatures. Despite the generally cool temperatures, high levels of solar radiation at high elevations pose an overheating risk. Overheating does not seem to be much of a problem for high elevation butterflies in current conditions, but overheating could become a problem as climates change. 
+Is climate change driving other types of morphological shifts? To answer this question, it’s useful to look to museums, which often hold many individuals of the same species that have been collected over a long period of time, allowing us to compare later specimens to earlier ones and look for patterns. In this case study, you’ll be able to examine data from museum specimens of montane butterflies in the genus *Colias*.
 
-Wing coloration is determined by genetics and potentially also plasticity: increased temperatures during pupal development lead to lighter wings to avoid overheating. [We don’t actually know how plastic the high elevation Colias meadii is since we can’t rear them. Our plasticity data is for slightly lower elevation C. eriphlye, so perhaps we should pose plasticity as a possibility.]
+### Warmth is life or death for *Colias* butterflies
+
+Because almost all have wings that are a shade of yellow—ranging from very pale cream to a rich egg-yolk orange—*Colias* butterflies are known as “Sulphurs” in North America. (They are often called “Clouded Yellows” in other parts of the world.) Many of these lovely insects inhabit mountains, where temperatures can vary widely over the course of a single day and across a butterfly’s lifespan. **Thermoregulation**—maintaining an ideal body temperature—is therefore incredibly important to butterfly survival and reproduction in these environments. If they’re too cold, butterflies can’t fly, feed, mate, or lay eggs. So *Colias* butterflies have developed traits that help them thermoregulate. Primarily, dark pigmentation on the undersides of their wings helps them absorb solar radiation when they need to warm up. 
+
+![Colias butterfly basking, photo: Heidi MacLean][http://faculty.washington.edu/lbuckley/wordpress/wp-content/uploads/2019/05/Colias-basking.png]
+
+![Butterfly habitat in the Rocky Mountains of Colorado, photo: Heidi MacLean][http://faculty.washington.edu/lbuckley/wordpress/wp-content/uploads/2019/05/RMBL.png]
+
+Exactly how dark an individual butterfly’s wings end up being depends on the genes it has evolved to carry. Some species are also known to be plastic, and for these species, an individual’s wing color depends also on the temperature it experienced as a pupa. Cooler pupal temperatures lead to more wing darkening, and vice versa. Because air temperatures are generally lower at higher elevations, butterflies that live higher on mountains tend to emerge with darker wings. But high elevations can be extremely sunny, and it’s possible for butterflies to get too hot to fly. Overheating is also detrimental because it means females lay fewer high quality eggs. 
+
+For most of the evolutionary history of these insects, overheating hasn’t been much of a problem for high elevation butterflies—but their story might be different under climate change. Wing coloration is an interesting trait to study in relation to climate change because it has direct impacts on an individual’s survival and reproduction, and it’s easy to measure in museum specimens. If the places where *Colias* butterflies live have warmed in recent decades, we might expect that more recent specimens will have lighter wings that are less vulnerable to overheating than older ones.  
+
+### Pulling data out of specimen drawers
+
+The data you’ll be exploring today were collected by graduate student Heidi MacLean from seven different museums across the United States. She focused on tracking down examples of *Colias meadii*, also known as Mead’s Sulphurs. These butterflies are found in subalpine and alpine meadows in the Rocky Mountain range, from northern New Mexico in the U.S. to southern Alberta in Canada. Each year, eggs laid in summer develop through three larval instars (stages) before going into their winter diapause. In the spring, the larvae come out of diapause and continue to feed and develop until they pupate. Finally, they emerge as adults in July and August. Individual adult butterflies have only a few days to reproduce before they die. Altogether, MacLean found a total of 861 *Colias meadii* specimens that had been collected between 1953 and 2013, from three different populations that are known to be genetically distinct. 
 
 
-Wing coloration is a rare trait in that it is observable in museum specimens, links directly to butterfly physiology, and determines responses to both short- and long-term thermal stress.
-
-In this activity, we will use museum specimens of the high elevation Colias meadii to explore whether wing coloration and other thermoregulatory traits have over recent decades as climate change has increased temperatures. 
-[Info on resurvey?]
-
-The simplest prediction is that wings have become lighter to avoid overheating as the climate has warmed. However, the researchers built models of how the butterflies’ environment influences their body temperatures, flight times, and how flight times influences rates of survival and reproduction. The models support the simple prediction of wing lightening at lower elevations. At high elevations where conditions are cold, the models predict that darker wings could allow the butterflies to fly over more areas and longer durations both through the day and across the season. However, the darker wings would also increasing overheating risk when temperatures are warm and solar radiation levels are high. 
-
-[Section complicated. Reduce or drop?]
-Other complications make predictions challenging. Variable environmental conditions at high altitude may cause variability in whether light or dark wings confer greater fitness and slow down evolution. Plasticity may also allow butterflies to respond to respond to environmental variability. This response could either slow evolution by providing an alternative response or facilitate evolution by reducing variation in selection. Butterflies may also develop faster in warm temperatures, leading to earlier phenology and exposure to cool, early-season conditions.
-
-## Specimens
-Colias meadii occurs in subalpine and alpine meadows above 2.5km elevation throughout the Rocky Mountains from northern New Mexico, USA to southern Alberta, Canada [23]. They have a single generation each year (univoltine) and diapause over the winter as 3rd instar larvae; the adult flight season lasts four to six weeks in July and August (between days 180-240). Individual butterflies live only a few days and the flight season in any particular location is limited to several weeks, but the timing of the flight season can differ among locations. 
-
-Graduate student Heidi MacLean visited seven museums across the United States to collect data from butterfly specimens collected from 1953 50 2013 in  three regions (Southern RM= Southern Rocky Mountains; Northern RM= Northern Rocky Mountains; and Canadian RM= Canadian Rocky Mountains, Figure 1).  We analyze the regions separately because they are genetically distinguished with clear evidence of restricted gene flow between all three regions [31]. 
-Weather is variable in the mountains and historic weather data from high elevation is limited, so we selected a representative weather station that occupies a high, relevant elevation for each region. 
-[Link to pictures of weather stations?: For the Southern and Northern RM, we used stations from the National Weather Service Cooperative Observed Program (COOP) at Climax, CO (39.37°N, 106.18°W, 3514m) and Moran 5WNW, WY (43.86°N, 110.59°W, 2072m), respectively (data retrieved from www.ncdc.noaa.gov). For the Canadian RM, we used the Blue Hill Lookout, Alberta station (51.70°N, 115.22°W, 1951m, data retrieved from http://climate.weather.gc.ca). ]
-The highest station with complete weather data was below butterfly habitat in the Northern Rocky Mountains, so we used abiatic lapse rate (as average of how fast temperatures cool as you move up a mountain) to adjust the weather station temperatures.
+You can see below where each population is found and the elevation at which it lives. Butterflies at higher latitudes live at lower elevations, which allows all populations to occupy a similar range of temperatures. You can also see how spring and summer temperatures have increased over time in each region (although note how much each line jumps around—that’s a sign of high variation!). By the way, the climate data below come from nearby weather stations in each region. There was no weather station with a complete historical record located as high up in the mountains as butterflies live in the Northern Rocky Mountains, but knowing the rate at which temperatures cool as you move up a mountain, researchers were able to adjust the data from the nearest station to come up with an approximation of the correct climate. 

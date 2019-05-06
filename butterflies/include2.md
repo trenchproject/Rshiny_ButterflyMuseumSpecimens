@@ -1,29 +1,37 @@
 ---
 title: "include2.md"
 author: "Meera Lee Sethi"
-date: "4/24/2019"
+date: "5/6/2019"
 output: html_document
 ---
 
-## Study variables
-Our dataset will allow you to explore the following variables:
-Year
+### Trait measurements 
 
-Day of year
+For each butterfly specimen, MacLean measured three morphological traits. First, using digital photography and a computer program, she calculated the proportion of scales with dark pigmentation (or “melanism”) in a specific place on the underside of each hind-wing. You’ll see values for wing melanism that range from 0 (all pale scales) to 1 (all dark scales). As an aside, most butterflies bask in the sun by opening their wings flat, like a book, and exposing the top side. But *Colias* butterflies warm up by exposing the undersides of their wings, known as “lateral basking.” This is a key piece of information about their natural history that helped MacLean understand which parts of their wings to measure!
 
-Wing coloration [will find pictures]: degree of wing melanism on the posterior ventral hind-wing within a triangulated region between the eyespot, hind wing insertion, and the wing margin [34,35]. Wing scales are pigmented by either melanin (dark) or pterin (light). We calculated a gray level value between 0 (white) and 1 (black), which reflects the proportion of melanic scales. 
+In addition, MacLean measured two other traits that you might expect to change with climate: Forewing length (remember the discussion of temperature and size above; warmer temperatures might result in smaller forewings) and setae length. Setae are hairs on a butterfly’s body that help to insulate it, like a fur coat. Longer setae keep butterflies warmer.
 
-Forewing length, proxy for overall body size [drop?]: Cooler temperatures tend to delay development and cause insects to grow bigger. Bigger sizes may also help retain heat.
+The image below shows two different *Colias* species, *Colias meadeii* and a relative that lives at a lower elevation. You can see the differences in wing melanism (absorbtivity is a measure of how much heat each specimen's wing is able to absorb) and in setae thickness (also called "fur").
 
-Fur thickness: We measured setal length directly on the ventral thorax with an ocular micrometer on a Wild M5 microscope as the longest setae between the first and second leg. 
+![Low-elevation vs. high-elevation *Colias* butterfly traits, image: Heidi MacLean][http://faculty.washington.edu/lbuckley/wordpress/wp-content/uploads/2019/05/MacLean-slide.png]
 
-Pupal temperatures: Based on previous studies in the closely related Colias eriphyle [21], we predicted that Tp might alter wing melanism via plasticity. We expect Td (encompassing late larval and pupal development) to influence phenology and forewing length, a proxy for body size [37]. Pupation lasts for 14 days at 20°C for the closely related C eriphyle [13]. Slightly expanding the window to account for uncertainty in this duration, we estimated Tp as the average of mean daily temperatures 26 to 6 days prior to the collection date. 
-doy:
+### Exploring butterfly morphological data 
 
-Seasonal (developmental) temperatures: We further expanded the window to include late larval development and estimated Td as the average of mean daily temperatures 46 days to 6 days prior to the mean flight date (day 208, i.e., days 162 to 202). We used fixed dates to estimate Td to indicate annual conditions and avoid circularity in predicting phenology. 
+In this exercise, you can generate figures using the following variables:
 
-## Hypothesis generation
-Potential hypotheses: 1) temperatures during the development period have increased, reflecting regional climate warming; 2) warmer developmental temperatures have advanced adult phenology; and 3) thermoregulatory trait values have declined to reduce the heat load associated with warming. However, these declines may be lessened if phenological shifts enable temperature tracking. We then examine how phenology, temperature, and year interact to influence thermoregulatory traits. In particular, we look for evidence that higher pupal temperatures decrease melanism via plasticity. 
+1. Year (This is the year in which each specimen was collected. Include this variable when you want to look at changes over time.)
+2. Day of year (This is the day of the year (Jan 1 is 1, December 31 is 365) when each specimen was collected. Since adult Colias butterflies only live a few days, this gives us a good estimate of their phenology, especially when they reached adulthood.)
+3. Seasonal temperature (This is a measure of overall spring and summer temperatures in each year.)
+4. Pupal temperature (This is an estimate of how warm it was specifically during the period when a particular specimen was pupating.)
+5. Wing melanism (A measure of the darkness of the underwings.)
+6. Forewing length (A measure of overall body size.)
+7. Setae length (A measure of the longest setae between the first and second leg.)
 
-[Prompts to develop hypotheses and explore them using interactive plot]
+In addition to selecting variables to display on the x- and y-axes, you have the option of coloring each data point according to a third variable. For example, to see whether pupal temperatures have changed over time, plot Year as the x-axis variable and Pupal temperature as the y-axis variable. If you then select Day of Year as the variable for Color, you’ll be able to see when each specimen was collected. This might be interesting if you wanted to see if pupal temperatures are changing because of climate change, OR because butterflies are experiencing a phenological shift.
 
+Try to answer some of the following questions by changing the data you plot. For each, consider whether you see the same patterns at all three sites, or if different populations respond differently. Recall how each population occupies a different elevational range. How might this affect their responses?
+
+* Have spring and summer temperatures increased over the years?
+* Have butterfly wings lightened over the year?
+* Have forewings or setae length decreased over the years?
+* Do spring and summer temperatures affect the day of year when butterflies reach adulthood?
