@@ -5,7 +5,7 @@ date: "5/6/2019"
 output: html_document
 ---
 
-### Trait measurements Test
+### Taking trait measurements 
 
 For each butterfly specimen, MacLean measured three morphological traits. First, using digital photography and a computer program, she calculated the proportion of scales with dark pigmentation (or “melanism”) in a specific place on the underside of each hind-wing. You’ll see values for wing melanism that range from 0 (all pale scales) to 1 (all dark scales). As an aside, most butterflies bask in the sun by opening their wings flat, like a book, and exposing the top side. But *Colias* butterflies warm up by exposing the undersides of their wings, known as “lateral basking.” This is a key piece of information about their natural history that helped MacLean understand which parts of their wings to measure!
 

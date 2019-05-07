@@ -1,5 +1,5 @@
 #
-# Part of trench project
+# Part of trench-ed project
 # author Aji John https://github.com/ajijohn
 # adapted from Shiny 
 # Server
@@ -15,7 +15,7 @@ absM.all=read.csv(paste(getwd(),"/absM-all.csv",sep = ""))
 absM= absM.all
 
 # Define server logic to do filtering
-shinyServer(function(input, output) {
+shinyServer(function(input, output) { 
 
   dataset <- reactive({
     x <- strsplit(as.character(input$year), "\\s+")

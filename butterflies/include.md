@@ -7,7 +7,7 @@ output: html**document
 
 ## Morphological Responses to Climate Change: A Case Study
 
-### Museum specimens hold clues to physical changes
+### Museum specimens hold clues to organisms' physical changes 
 
 In different environments, different physical forms are more or less suitable. For instance, trees growing in extremely windy places tend to have stout trunks and be short in stature, both traits that make them less susceptible to wind damage. It makes sense, then, that climate change is leading to changes in organisms’ physical structure, or morphology. One thing researchers have documented in many species is a [shrinking of overall body size](https://www.scientificamerican.com/article/how-global-warming-is-shrinking-earths-animals/). There are a few reasons for this, but one is that it’s easier to cool yourself down if you’re smaller, since you have a larger surface area compared to your volume. Think of how much faster a hot cup of coffee cools down if you pour it into a wide pan! Another reason that’s specific to insects and other ectotherms is that when it’s warm, insects grow to adulthood more quickly—and therefore reach adulthood at a smaller size.
 
