@@ -24,10 +24,6 @@ Because almost all have wings that are a shade of yellow—ranging from very pal
 <figcaption> Colias butterfly basking, photo: Heidi MacLean</figcaption>
 </p>
 
-<p align="center">
-<img src="http://faculty.washington.edu/lbuckley/wordpress/wp-content/uploads/2019/05/Colias-basking.png"/>
-</p>
-<p align="center">
 <img src="http://faculty.washington.edu/lbuckley/wordpress/wp-content/uploads/2019/05/RMBL.png">
 <figcaption>Butterfly habitat in the Rocky Mountains of Colorado, photo: Heidi MacLean</figcaption>
 </p>
