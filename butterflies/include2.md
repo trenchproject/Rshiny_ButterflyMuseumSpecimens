@@ -13,7 +13,13 @@ In addition, MacLean measured two other traits that you might expect to change w
 
 The image below shows two different *Colias* species, *Colias meadeii* and a relative that lives at a lower elevation. You can see the differences in wing melanism (absorbtivity is a measure of how much heat each specimen's wing is able to absorb) and in setae thickness (also called "fur").
 
-![Low-elevation vs. high-elevation *Colias* butterfly traits, image: Heidi MacLean](http://faculty.washington.edu/lbuckley/wordpress/wp-content/uploads/2019/05/MacLean-slide.png)
+<p align="center">
+<img src="http://faculty.washington.edu/lbuckley/wordpress/wp-content/uploads/2019/05/MacLean-slide.png"/>
+</p>
+<p align="center">
+<figcaption>Low-elevation vs. high-elevation *Colias* butterfly traits, image: Heidi MacLean</figcaption>
+</p>
+
 
 ### Exploring butterfly morphological data 
 
