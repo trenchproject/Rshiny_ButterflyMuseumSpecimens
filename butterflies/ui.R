@@ -77,19 +77,6 @@ shinyUI(
     fluidRow(
       column(12,
              includeMarkdown("include3.md")
-      )),
-    
-    p(tippy("*Have spring and summer temperatures increased over the years?", tooltip="When you plot Year on the x-axis and spring and summer temperatures on the y-axis, you see lines sloping upward. This indicates a positive relationship. On average, all three sites have warmed over the years.")),
-    
-    p(tippy("* Have butterfly wings lightened over the years?", tooltip="When you plot Year on the x-axis and wing melanism on the y-axis, you see the expected pattern (a negative relationship, indicating wing lightening over the years) only for the Northern Rocky Mountains. For the Southern and Canadian Rocky Mountains, you see either no relationship or a positive relationship, which means wings have actually gotten darker over the years despite warming. Why might this be? One thing to consider is that butterflies in the Southern Rocky Mountains are living at extremely high elevations, where conditions even after warming are colder than the other sites. Here, darker wings could allow the butterflies to take advantage of warming to fly farther and longer, especially if shifting phenologies are causing them to be active earlier and later in the season when things are cooler than in midsummer. Also, temperatures fluctuate more dramatically at high elevation, meaning even if it's warmer on average, darker wings are still beneficial in very cool days or years.")),
-    
-      p(tippy("*Have forewings or setae length decreased over the years?", tooltip="In the Northern and Canadian Rocky Mountains, neither forewing nor setae length have shifted over time, suggesting there hasn't been enough selective pressure to trigger these changes. In the Southern Rocky Mountains, both forewing and setae length have increased over the years, along with wing melanism. This is a surprising result, since they all point toward the butterflies increasing their ability to retain heat even though the climate has warmed. See the discussion linked to the previous question for some possible explanations.")),
-    
-         p(tippy("* Do spring and summer temperatures affect the day of year when butterflies reach adulthood?", tooltip="When you plot spring and summer temperatures on the x-axis and DOY on the y-axis, you see lines sloping downward. This indicates a negative relationship. In years with warmer spring and summer temperatures, butterfly phenology advances (shifts earlier). However, if you plot Year on the x-axis, there is no clear pattern—meaning average butterfly phenology hasn't advanced over the years.")),
-
-    fluidRow(
-      column(12,
-             includeMarkdown("include4.md")
       ))
   )
 )
