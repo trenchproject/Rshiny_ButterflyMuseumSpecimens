@@ -1,0 +1,12 @@
+name: butterflies
+title: butterflies
+username:
+account: huckley
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 613400
+bundleId: 2076144
+url: https://huckley.shinyapps.io/butterflies/
+when: 1557522527.27768
+asMultiple: FALSE
+asStatic: FALSE
