@@ -17,7 +17,7 @@ The image below shows two different *Colias* species, *Colias meadeii* and a rel
 <img src="http://faculty.washington.edu/lbuckley/wordpress/wp-content/uploads/2019/05/MacLean-slide.png"/>
 </p>
 <p align="center">
-<figcaption>Low-elevation vs. high-elevation *Colias* butterfly traits, image: Heidi MacLean</figcaption>
+<figcaption>Low-elevation vs. high-elevation Colias butterfly traits, image: Heidi MacLean</figcaption>
 </p>
 
 
