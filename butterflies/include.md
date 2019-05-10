@@ -24,6 +24,7 @@ Because almost all have wings that are a shade of yellow—ranging from very pal
 <figcaption> Colias butterfly basking, photo: Heidi MacLean</figcaption>
 </p>
 
+<p align="center">
 <img src="http://faculty.washington.edu/lbuckley/wordpress/wp-content/uploads/2019/05/RMBL.png">
 <figcaption>Butterfly habitat in the Rocky Mountains of Colorado, photo: Heidi MacLean</figcaption>
 </p>
@@ -38,7 +39,7 @@ High elevations can be extremely sunny, and it’s possible for butterflies to g
 The data you’ll be exploring today were collected by graduate student Heidi MacLean from seven different museums across the United States. She focused on tracking down examples of *Colias meadii*, also known as Mead’s Sulphurs. These butterflies are found in subalpine and alpine meadows in the Rocky Mountain range, from northern New Mexico in the U.S. to southern Alberta in Canada. Each year, eggs laid in summer develop through three larval instars (stages) before going into their winter diapause. In the spring, the larvae come out of diapause and continue to feed and develop until they pupate. Finally, they emerge as adults in July and August. Individual adult butterflies have only a few days to reproduce before they die. Altogether, MacLean found a total of 861 *Colias meadii* specimens that had been collected between 1953 and 2013, from three different populations that are known to be genetically distinct. 
 
 <p align="center">
-<img src=""http://faculty.washington.edu/lbuckley/wordpress/wp-content/uploads/2019/05/butterflies-in-drawer-e1557178557728.png"/>
+<img src="http://faculty.washington.edu/lbuckley/wordpress/wp-content/uploads/2017/05/colias.jpg"/>
 </p>
 <p align="center">
 <figcaption>Drawers full of Colias butterflies, photo: Lauren Buckley</figcaption>
