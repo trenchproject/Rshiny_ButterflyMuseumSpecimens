@@ -42,7 +42,7 @@ The data you’ll be exploring today were collected by graduate student Heidi Ma
 <img src="http://faculty.washington.edu/lbuckley/wordpress/wp-content/uploads/2017/05/colias.jpg"/>
 </p>
 <p align="center">
-<figcaption>Drawers full of Colias butterflies, photo: Lauren Buckley</figcaption>
+<figcaption>Drawers full of Colias butterflies, photo: Heidi MacLean</figcaption>
 </p>
 
 You can see below where each population is found and the elevation at which it lives. Butterflies at higher latitudes live at lower elevations, which allows all populations to occupy a similar range of temperatures. You can also see how spring and summer temperatures have increased over time in each region (although note how much each line jumps around—that’s a sign of high variation!). By the way, the climate data below come from nearby weather stations in each region. There was no weather station with a complete historical record located as high up in the mountains as butterflies live in the Northern Rocky Mountains, but knowing the rate at which temperatures cool as you move up a mountain, researchers were able to adjust the data from the nearest station to come up with an approximation of the correct climate. 

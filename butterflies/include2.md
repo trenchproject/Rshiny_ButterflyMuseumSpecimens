@@ -11,7 +11,7 @@ For each butterfly specimen, MacLean measured three morphological traits. First,
 
 In addition, MacLean measured two other traits that you might expect to change with climate: Forewing length (remember the discussion of temperature and size above; warmer temperatures might result in smaller forewings) and setae length. Setae are hairs on a butterfly’s body that help to insulate it, like a fur coat. Longer setae keep butterflies warmer.
 
-The image below shows two different *Colias* species, *Colias meadeii* and a relative that lives at a lower elevation. You can see the differences in wing melanism (absorbtivity is a measure of how much heat each specimen's wing is able to absorb) and in setae thickness (also called "fur").
+The image below shows two different *Colias* species, *Colias meadii* and a relative that lives at a lower elevation. You can see the differences in wing melanism (absorbtivity is a measure of how much heat each specimen's wing is able to absorb) and in setae thickness (also called "fur").
 
 <p align="center">
 <img src="http://faculty.washington.edu/lbuckley/wordpress/wp-content/uploads/2019/05/MacLean-slide.png"/>

@@ -5,8 +5,8 @@ account: huckley
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 613400
-bundleId: 2076144
+bundleId: 2076159
 url: https://huckley.shinyapps.io/butterflies/
-when: 1557522527.27768
+when: 1557523420.67175
 asMultiple: FALSE
 asStatic: FALSE
