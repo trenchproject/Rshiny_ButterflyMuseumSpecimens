@@ -42,12 +42,14 @@ shinyServer(function(input, output) {
   output$distPlot <- renderPlot({
     
     p1<- ggplot(data=dataset(), aes(Lat,estElevation,col=region.lab)) + geom_point() +
-      theme_classic() +labs(x="Latitude(°)",y="Elevation (m)")
+      theme_classic() +labs(x="Latitude(°)",y="Elevation (m)", col="Region") + 
+      theme(axis.text=element_text(size=12), axis.title=element_text(size=12), legend.text=element_text(size=12), legend.title=element_text(size=12))
     
     p2<- ggplot(data=dataset(), aes(Year,doy162to202,col=region.lab)) + geom_point() + geom_line() +
       geom_smooth(se = FALSE, method = lm) +
-      theme_classic() +labs(x="Year",y="Season Temperature (°C)")
-    
+      theme_classic() +labs(x="Year",y="Season Temperature (°C)", col="Region") +
+      theme(axis.text=element_text(size=12), axis.title=element_text(size=12), legend.text=element_text(size=12), legend.title=element_text(size=12)) 
+     
     plot_grid(p1,p2, ncol=1,nrow = 2,
               labels="", label_size=12, align="v")  
     
@@ -67,7 +69,8 @@ shinyServer(function(input, output) {
       theme(legend.key.width=unit(1,"cm"))+
       #labs(color="Developmental Temperature (°C)") +labs(tag="(a)") +
       geom_abline(aes(slope=syear.slope,intercept=syear.int))+
-      facet_wrap(~region.lab)
+      facet_wrap(~region.lab) +
+      theme(axis.text=element_text(size=12), axis.title=element_text(size=12), legend.text=element_text(size=12), legend.title=element_text(size=12))
   })
   
 })
