@@ -36,7 +36,7 @@ shinyServer(function(input, output) {
                        options = providerTileOptions(noWrap = TRUE)
       ) %>%
       addCircles(~lon,~lat,color = ~pal(estElevation)) %>%
-      addLegend(pal = pal, values = ~estElevation) 
+      addLegend(pal = pal, values = ~estElevation, title="Elevation (m)") 
   })
   
   output$distPlot <- renderPlot({
@@ -46,7 +46,7 @@ shinyServer(function(input, output) {
     
     p2<- ggplot(data=dataset(), aes(Year,doy162to202,col=region.lab)) + geom_point() + geom_line() +
       geom_smooth(se = FALSE, method = lm) +
-      theme_classic() +labs(x="Year",y="Developmental Temperature (°C)")
+      theme_classic() +labs(x="Year",y="Season Temperature (°C)")
     
     plot_grid(p1,p2, ncol=1,nrow = 2,
               labels="", label_size=12, align="v")  

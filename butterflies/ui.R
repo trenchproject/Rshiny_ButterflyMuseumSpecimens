@@ -71,9 +71,9 @@ shinyUI(
              br()
       ),
       column(4, offset = 1,
-             selectInput('x', 'X', c('Year'='Year','doy'='doy','Developmental Temperature'='doy162to202','Pupal Temperature'='Tpupal','Forewing Length (mm)'='FWL','Wing Melanism (gray level)'='Corr.Val','Setae length (mm)'='Thorax')),
-             selectInput('y', 'Y',  c('Year'='Year','doy'='doy','Developmental Temperature'='doy162to202','Pupal Temperature'='Tpupal','Forewing Length (mm)'='FWL','Wing Melanism (gray level)'='Corr.Val','Setae length  (mm)'='Thorax')),
-             selectInput('color', 'Color', c('Year'='Year','doy'='doy','Developmental Temperature'='doy162to202','Pupal Temperature'='Tpupal','Forewing Length'='FWL'))
+             selectInput('x', 'X', c('Year'='Year','doy'='doy','Season Temperature'='doy162to202','Pupal Temperature'='Tpupal','Forewing Length (mm)'='FWL','Wing Melanism (gray level)'='Corr.Val','Setae length (mm)'='Thorax')),
+             selectInput('y', 'Y',  c('Year'='Year','doy'='doy','Season Temperature'='doy162to202','Pupal Temperature'='Tpupal','Forewing Length (mm)'='FWL','Wing Melanism (gray level)'='Corr.Val','Setae length  (mm)'='Thorax')),
+             selectInput('color', 'Color', c('Year'='Year','doy'='doy','Season Temperature'='doy162to202','Pupal Temperature'='Tpupal','Forewing Length'='FWL'))
       )
       
     ),
