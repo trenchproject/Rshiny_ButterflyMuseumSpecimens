@@ -24,7 +24,7 @@ shinyServer(function(input, output) {
     to <-   as.numeric(x[2])
     print(from)
     print(to)
-    absM.all %>% filter(Year >=  from & Year <= to)
+    absM.all %>% filter(Year >=  from & Year <= to & region.lab %in% input$region)
   })
   
   print(getwd())

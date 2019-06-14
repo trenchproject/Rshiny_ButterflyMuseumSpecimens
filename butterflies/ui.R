@@ -16,6 +16,7 @@ library(leaflet.extras)
 library(tippy)
 
 dataset <-read.csv(paste(getwd(),"/absM-all.csv",sep = ""))
+regions <- c("Canadian RM", "Northern RM", "Southern RM")
 
 # Define UI 
 shinyUI(
@@ -70,10 +71,13 @@ shinyUI(
                          format = "####",sep = "",step = 1),
              br()
       ),
-      column(4, offset = 1,
+      column(3, offset = 1,
              selectInput('x', 'X', c('Year'='Year','doy'='doy','Season Temperature'='doy162to202','Pupal Temperature'='Tpupal','Forewing Length (mm)'='FWL','Wing Melanism (gray level)'='Corr.Val','Setae length (mm)'='Thorax')),
-             selectInput('y', 'Y',  c('Year'='Year','doy'='doy','Season Temperature'='doy162to202','Pupal Temperature'='Tpupal','Forewing Length (mm)'='FWL','Wing Melanism (gray level)'='Corr.Val','Setae length  (mm)'='Thorax')),
-             selectInput('color', 'Color', c('Year'='Year','doy'='doy','Season Temperature'='doy162to202','Pupal Temperature'='Tpupal','Forewing Length'='FWL'))
+             selectInput('y', 'Y',  c('Year'='Year','doy'='doy','Season Temperature'='doy162to202','Pupal Temperature'='Tpupal','Forewing Length (mm)'='FWL','Wing Melanism (gray level)'='Corr.Val','Setae length  (mm)'='Thorax'), selected = "doy162to202"),
+             selectInput('color', 'Color', c('Year'='Year','doy'='doy','Season Temperature'='doy162to202','Pupal Temperature'='Tpupal','Forewing Length'='FWL'), selected = "doy")
+      ),
+      column(3, offset = 1,
+             selectInput('region', 'Region', choices= as.character(regions), multiple=TRUE, selectize=FALSE, selected=regions)
       )
       
     ),
