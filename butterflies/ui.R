@@ -69,12 +69,13 @@ shinyUI(
                          value=c(min(dataset$Year), 
                                    max(dataset$Year)),
                          format = "####",sep = "",step = 1),
+
              br()
       ),
       column(3, offset = 1,
              selectInput('x', 'X', c('Year'='Year','Day of Year Collected'='doy','Season Temperature(°C)'='doy162to202','Pupal Temperature(°C)'='Tpupal','Forewing Length (mm)'='FWL','Wing Melanism (gray level)'='Corr.Val','Setae length (mm)'='Thorax')),
              selectInput('y', 'Y', c('Year'='Year','Day of Year Collected'='doy','Season Temperature(°C)'='doy162to202','Pupal Temperature(°C)'='Tpupal','Forewing Length (mm)'='FWL','Wing Melanism (gray level)'='Corr.Val','Setae length  (mm)'='Thorax'), selected = "doy162to202"),
-             selectInput('color', 'Color', c('Year'='Year','Day of Year Collected'='doy','Season Temperature(°C)'='doy162to202','Pupal Temperature(°C)'='Tpupal','Forewing Length'='FWL'), selected = "doy")
+             selectInput('color', 'Color to plot', c('Year'='Year','Day of Year Collected'='doy','Season Temperature(°C)'='doy162to202','Pupal Temperature(°C)'='Tpupal','Forewing Length (mm)'='FWL'), selected = "doy")
       ),
       column(3, offset = 1,
              selectInput('region', 'Region', choices= as.character(regions), multiple=TRUE, selectize=FALSE, selected=regions)
