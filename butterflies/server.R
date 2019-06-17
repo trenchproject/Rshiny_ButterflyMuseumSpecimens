@@ -14,6 +14,8 @@ library(cowplot)
 absM.all=read.csv(paste(getwd(),"/absM-all.csv",sep = ""))
 absM= absM.all
 
+varnames = c('Year'='Year','Day of Year'="doy",'Season Temperature (°C)'='doy162to202','Pupal Temperature (°C)'='Tpupal','Forewing Length (mm)'='FWL','Wing Melanism (gray level)'='Corr.Val','Setae length  (mm)'='Thorax')
+
 # Define server logic to do filtering
 shinyServer(function(input, output) { 
 
@@ -58,15 +60,19 @@ shinyServer(function(input, output) {
   output$trendPlot <- renderPlot({
   
   #TODO Make Y Label dynamic
+  xlabel <- names(varnames[which(varnames == input$x)])
+  ylabel <- names(varnames[which(varnames == input$y)])
+  colorlabel <- names(varnames[which(varnames == input$color)])
 
   # trend plot with #add trendlines
   ggplot(data=dataset(), aes_string(x=input$x, y = input$y, color=input$color)) +
       geom_point(alpha=0.8) +
       geom_smooth(se = FALSE, method = lm) +
-      theme_classic()+ xlab(input$x) +
+      theme_classic()+
       #theme(legend.position="none")+
       scale_color_gradientn(colours = rev(heat.colors(5)))+ 
       theme(legend.key.width=unit(1,"cm"))+
+      labs(x=xlabel, y=ylabel, color=colorlabel) + 
       #labs(color="Developmental Temperature (°C)") +labs(tag="(a)") +
       geom_abline(aes(slope=syear.slope,intercept=syear.int))+
       facet_wrap(~region.lab) +
