@@ -69,7 +69,7 @@ shinyUI(
                          value=c(min(dataset$Year), 
                                    max(dataset$Year)),
                          format = "####",sep = "",step = 1),
-
+             radioButtons('color_or_not', 'Color', c('On', 'Off')),
              br()
       ),
       column(3, offset = 1,

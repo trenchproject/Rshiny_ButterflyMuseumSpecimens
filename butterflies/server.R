@@ -44,7 +44,7 @@ shinyServer(function(input, output) {
   output$distPlot <- renderPlot({
     
     p1<- ggplot(data=dataset(), aes(Lat,estElevation,col=region.lab)) + geom_point() +
-      theme_classic() +labs(x="Latitude(°)",y="Elevation (m)", col="Region") + 
+      theme_classic() +labs(x="Latitude (°)",y="Elevation (m)", col="Region") + 
       theme(axis.text=element_text(size=12), axis.title=element_text(size=12), legend.text=element_text(size=12), legend.title=element_text(size=12))
     
     p2<- ggplot(data=dataset(), aes(Year,doy162to202,col=region.lab)) + geom_point() + geom_line() +
@@ -65,6 +65,7 @@ shinyServer(function(input, output) {
   colorlabel <- names(varnames[which(varnames == input$color)])
 
   # trend plot with #add trendlines
+  if(input$color_or_not=='On'){
   ggplot(data=dataset(), aes_string(x=input$x, y = input$y, color=input$color)) +
       geom_point(alpha=0.8) +
       geom_smooth(se = FALSE, method = lm) +
@@ -77,6 +78,19 @@ shinyServer(function(input, output) {
       geom_abline(aes(slope=syear.slope,intercept=syear.int))+
       facet_wrap(~region.lab) +
       theme(axis.text=element_text(size=12), axis.title=element_text(size=12), legend.text=element_text(size=12), legend.title=element_text(size=12))
+  }else{
+  ggplot(data=dataset(), aes_string(x=input$x, y = input$y)) +
+    geom_point(alpha=0.8) +
+    geom_smooth(se = FALSE, method = lm) +
+    theme_classic()+
+    #theme(legend.position="none")+
+    theme(legend.key.width=unit(1,"cm"))+
+    labs(x=xlabel, y=ylabel) + 
+    #labs(color="Developmental Temperature (°C)") +labs(tag="(a)") +
+    geom_abline(aes(slope=syear.slope,intercept=syear.int))+
+    facet_wrap(~region.lab) +
+    theme(axis.text=element_text(size=12), axis.title=element_text(size=12))
+  }
   })
   
 })
