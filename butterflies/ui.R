@@ -73,8 +73,14 @@ shinyUI(
              br()
       ),
       column(3, offset = 1,
-             selectInput('x', 'X', c('Year'='Year','Day of Year Collected'='doy','Season Temperature(°C)'='doy162to202','Pupal Temperature(°C)'='Tpupal','Forewing Length (mm)'='FWL','Wing Melanism (gray level)'='Corr.Val','Setae length (mm)'='Thorax')),
-             selectInput('y', 'Y', c('Year'='Year','Day of Year Collected'='doy','Season Temperature(°C)'='doy162to202','Pupal Temperature(°C)'='Tpupal','Forewing Length (mm)'='FWL','Wing Melanism (gray level)'='Corr.Val','Setae length  (mm)'='Thorax'), selected = "doy162to202"),
+             selectInput('x', 'X', choices = list(
+                         Temporal = c('Year'='Year','Day of Year Collected'='doy'),
+                         Environmental = c('Season Temperature(°C)'='doy162to202','Pupal Temperature(°C)'='Tpupal'),
+                         Morphological = c('Forewing Length (mm)'='FWL','Wing Melanism (gray level)'='Corr.Val','Setae length (mm)'='Thorax'))),
+             selectInput('y', 'Y', choices = list(
+               Temporal = c('Year'='Year','Day of Year Collected'='doy'),
+               Environmental = c('Season Temperature(°C)'='doy162to202','Pupal Temperature(°C)'='Tpupal'),
+               Morphological = c('Forewing Length (mm)'='FWL','Wing Melanism (gray level)'='Corr.Val','Setae length (mm)'='Thorax')), selected = "FWL"),
              selectInput('color', 'Color to plot', c('Year'='Year','Day of Year Collected'='doy','Season Temperature(°C)'='doy162to202','Pupal Temperature(°C)'='Tpupal','Forewing Length (mm)'='FWL'), selected = "doy")
       ),
       column(3, offset = 1,
