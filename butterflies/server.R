@@ -16,6 +16,13 @@ absM= absM.all
 
 varnames = c('Year'='Year','Day of Year'="doy",'Season Temperature (°C)'='doy162to202','Pupal Temperature (°C)'='Tpupal','Forewing Length (mm)'='FWL','Wing Melanism (gray level)'='Corr.Val','Setae length  (mm)'='Thorax')
 
+#
+region_labels <- c("Canadian RM (Low elevation)", "Northern RM (Mid elevation)", "Southern RM (High elevation)")
+
+region_labeller <- function(variable,value){
+  return(region_labels[value])
+}
+
 # Define server logic to do filtering
 shinyServer(function(input, output) { 
 
@@ -76,7 +83,8 @@ shinyServer(function(input, output) {
       labs(x=xlabel, y=ylabel, color=colorlabel) + 
       #labs(color="Developmental Temperature (°C)") +labs(tag="(a)") +
       geom_abline(aes(slope=syear.slope,intercept=syear.int))+
-      facet_wrap(~region.lab) +
+      facet_wrap(~region.lab, labeller = region_labeller) +
+      theme(strip.text = element_text(size = 12)) +
       theme(axis.text=element_text(size=12), axis.title=element_text(size=12), legend.text=element_text(size=12), legend.title=element_text(size=12))
   }else{
   ggplot(data=dataset(), aes_string(x=input$x, y = input$y)) +
@@ -89,6 +97,7 @@ shinyServer(function(input, output) {
     #labs(color="Developmental Temperature (°C)") +labs(tag="(a)") +
     geom_abline(aes(slope=syear.slope,intercept=syear.int))+
     facet_wrap(~region.lab) +
+    theme(strip.text = element_text(size = 12)) +
     theme(axis.text=element_text(size=12), axis.title=element_text(size=12))
   }
   })
