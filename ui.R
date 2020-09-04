@@ -14,6 +14,7 @@ library(tidyverse)
 library(leaflet)
 library(leaflet.extras)
 library(tippy)
+library(cowplot)
 
 dataset <-read.csv(paste(getwd(),"/absM-all.csv",sep = ""))
 regions <- c("Canadian RM", "Northern RM", "Southern RM")
@@ -80,7 +81,7 @@ shinyUI(
              selectInput('y', 'Y', choices = list(
                Temporal = c('Year'='Year','Day of Year Collected'='doy'),
                Environmental = c('Season Temperature(°C)'='doy162to202','Pupal Temperature(°C)'='Tpupal'),
-               Morphological = c('Forewing Length (mm)'='FWL','Wing Melanism (gray level)'='Corr.Val','Setae length (mm)'='Thorax')), selected = "FWL"),
+               Morphological = c('Forewing Length (mm)'='FWL','Wing Melanism (gray level)'='Corr.Val','Setae length (mm)'='Thorax')), selected = "Corr.Val"),
              selectInput('color', 'Color to plot', c('Year'='Year','Day of Year Collected'='doy','Season Temperature(°C)'='doy162to202','Pupal Temperature(°C)'='Tpupal','Forewing Length (mm)'='FWL'), selected = "doy")
       ),
       column(3, offset = 1,
