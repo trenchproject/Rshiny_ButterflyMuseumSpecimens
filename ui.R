@@ -17,6 +17,8 @@ library(tippy)
 library(cowplot)
 library(shinyWidgets)
 library(cicerone)
+library(shinyjs)
+library(shinyBS)
 
 dataset <-read.csv(paste(getwd(), "/absM-all.csv", sep = ""))
 regions <- c("Canadian RM", "Northern RM", "Southern RM")
@@ -26,6 +28,7 @@ shinyUI(
   fluidPage(
     
     use_cicerone(),
+    useShinyjs(),
     title = "Butterfly museum specimens",
 
     includeMarkdown("include.md"),
@@ -50,6 +53,15 @@ shinyUI(
     
     p("In addition to selecting variables to display on the x- and y-axes, you have the option of coloring each data point according to a third variable. For example, to see whether pupal temperatures have changed over time, plot Year as the x-axis variable and Pupal temperature as the y-axis variable. If you then select Day of Year as the variable for Color, you’ll be able to see when each specimen was collected. This might be interesting if you wanted to see if pupal temperatures are changing because of climate change, OR because butterflies are experiencing a phenological shift."),
 
+    actionBttn(
+      inputId = "reset",
+      label = "Reset", 
+      style = "material-flat",
+      color = "danger",
+      size = "xs"
+    ),
+    bsTooltip("reset", "If you have already changed the variables, reset them to default here before starting the tour."),
+    
     actionBttn(
       inputId = "tour",
       label = "Take a tour!", 

@@ -26,6 +26,10 @@ shinyServer <- function(input, output) {
 
   observeEvent(input$tour, guide$init()$start())
   
+  observeEvent(input$reset, {
+    reset("viz-wrapper")
+  })
+  
   output$colorInput <- renderUI({
     if (input$color_or_not == "On") {
       selectInput('color', 'Color to plot', choices = varnames, selected = "doy")
