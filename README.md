@@ -6,10 +6,10 @@ The app aims to picture what impact climate change can have on butterflies. The 
 ## Prerequisites for opening in Rstudio
 Git and Rstudio ([Instructions](https://resources.github.com/whitepapers/github-and-rstudio/))  
 Installation of the following R packages:
-shiny, tidyverse, leaflet, leaflet.extras, tippy, cowplot, shinyWidgets, cicerone
+shiny, tidyverse, leaflet, leaflet.extras, tippy, cowplot, shinyWidgets, cicerone, shinyjs, shinyBS
 
 ```
-pkgs <- c('shiny', 'tidyverse', 'leaflet', 'leaflet.extras', 'tippy', 'cowplot', 'shinyWidgets', 'cicerone')
+pkgs <- c('shiny', 'tidyverse', 'leaflet', 'leaflet.extras', 'tippy', 'cowplot', 'shinyWidgets', 'cicerone', 'shinyjs', 'shinyBS')
 lapply(pkgs, FUN = function(x) {
     if (!require(x, character.only = TRUE)) {
       install.packages(x, dependencies = TRUE)
