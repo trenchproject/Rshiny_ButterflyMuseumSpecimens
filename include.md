@@ -33,6 +33,10 @@ Exactly how dark an individual butterfly’s wings end up being depends on the g
 
 High elevations can be extremely sunny, and it’s possible for butterflies to get too hot to fly. Overheating is also detrimental because it means females lay fewer high quality eggs. For most of the evolutionary history of these insects, overheating hasn’t been much of a problem for high elevation butterflies—but their story might be different under climate change. Wing coloration is an interesting trait to study in relation to climate change because it has direct impacts on an individual’s survival and reproduction, and it’s easy to measure in museum specimens. If the places where *Colias* butterflies live have warmed in recent decades, we might expect that more recent specimens will have lighter wings that are less vulnerable to overheating than older ones.  
 
+<p align="center"><img src="Colias.jpg"/, height="300 px", align="center"></p>
+<p align="center">The wings of the <i>Colias eurytheme</i> (left) are darker than the wings of the <i>Colias philodice</i> (right).
+</p>
+
 ### Pulling data out of specimen drawers
 
 <p><img src="http://faculty.washington.edu/lbuckley/wordpress/wp-content/uploads/2017/05/colias.jpg"/, height="200 px", align="left">
