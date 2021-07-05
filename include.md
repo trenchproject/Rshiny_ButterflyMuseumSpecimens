@@ -6,6 +6,7 @@ output: html**document
 ---
 
 Adapted from: [MacLean, HJ et al. 2019. Using museum specimens to track morphological shifts through climate change. Phil Trans Roy Soc B 374: 20170404.]("https://royalsocietypublishing.org/doi/full/10.1098/rstb.2017.0404") <br>
+Learn more about the research project [here](https://www.trenchproject.com/butterfly)<br>
 *Image credit: Heidi MacLean. Colias meadii butterflies and habitat*
 
 ### Museum specimens hold clues to organisms' physical changes 
