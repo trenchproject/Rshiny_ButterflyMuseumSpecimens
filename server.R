@@ -1,9 +1,3 @@
-#
-# Part of trench-ed project
-# author Aji John https://github.com/ajijohn
-# adapted from Shiny 
-# Server
-#
 
 source("cicerone.R", local = T)
 

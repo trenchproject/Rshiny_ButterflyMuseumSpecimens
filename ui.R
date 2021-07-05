@@ -1,13 +1,3 @@
-#
-# Part of trench-ed project
-# author Aji John https://github.com/ajijohn
-# UI
-#
-# todo
-# axis labels
-# setae length
-# 
-#
 
 library(shiny)
 library(tidyverse)
@@ -29,8 +19,12 @@ shinyUI(
     
     use_cicerone(),
     useShinyjs(),
-    title = "Butterfly museum specimens",
-
+    setBackgroundColor(color = "#C7DAE0"), 
+    titlePanel(
+      div(tags$img(src="TrenchEdLogo.png", height = 150), 
+          "Morphological Responses to Climate Change")
+    ),
+    
     includeMarkdown("include.md"),
     fluidRow(
              column(6,
