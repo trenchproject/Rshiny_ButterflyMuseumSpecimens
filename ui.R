@@ -20,6 +20,7 @@ shinyUI(
     use_cicerone(),
     useShinyjs(),
     setBackgroundColor(color = "#C7DAE0"), 
+    title="Butterfly Coloration",
     titlePanel(
       div(tags$img(src="TrenchEdLogo.png", height = 150), 
           "Morphological Responses to Climate Change")
