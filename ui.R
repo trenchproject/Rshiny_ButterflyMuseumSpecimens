@@ -78,7 +78,7 @@ shinyUI(
                              max = max(dataset$Year), 
                              value = c(min(dataset$Year), 
                                        max(dataset$Year)),
-                             format = "####", sep = "", step = 1)
+                             sep = "", step = 1)
                ),
                div(
                  id = "color-wrapper",
@@ -107,7 +107,7 @@ shinyUI(
         column(3, offset = 1,
                div(
                  id = "region-wrapper",
-                 selectInput('region', 'Region', choices = as.character(regions), multiple = TRUE, selectize = FALSE, selected = regions)
+                 checkboxGroupInput('region', 'Region', choices = as.character(regions), selected = "Canadian RM")
                )
         )
       ),
