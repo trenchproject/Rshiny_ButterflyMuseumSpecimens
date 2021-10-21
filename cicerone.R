@@ -28,7 +28,7 @@ guide <- Cicerone$
     el = "region-wrapper",
     title = "Regions",
     description = HTML("Let's focus on the two regions in the rocky mountains.<br> 
-                       Select <b>Northern RM</b> and <b>Southern RM</b> while holding ctrl button. They should be colored blue once selected.<br>
+                       Select <b>Northern RM</b> and <b>Southern RM</b>.<br>
                        Now let's go back to the plot to see how it looks.")
   )$
   step(
