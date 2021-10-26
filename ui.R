@@ -106,7 +106,7 @@ shinyUI(
         column(3, offset = 1,
                div(
                  id = "region-wrapper",
-                 checkboxGroupInput('region', 'Region', choices = as.character(regions), selected = "Canadian RM")
+                 selectInput('region', 'Region', choices = as.character(regions), multiple = TRUE, selectize = FALSE, selected = regions)
                )
         )
       ),
